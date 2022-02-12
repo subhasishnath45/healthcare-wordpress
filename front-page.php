@@ -1,3 +1,8 @@
+<?php 
+
+/* Template Name: Home page template */
+
+?>
 <?php get_header(); ?>
         <div class="container-fluid row4">
             <div class="container">

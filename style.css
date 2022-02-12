@@ -7,3 +7,24 @@ Tags: Healthcare, Medical
 Author: Cad Centre DDMA3
 Author URI: https://www.cadcentreju.org 
 */
+
+.widget1{
+    margin-top:20px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+    background: #fff;
+}
+.widget1 h2{
+    border-bottom: 1px solid #ff0000;
+    margin-bottom: 10px;
+}
+.widget1 ul{
+    list-style: none;
+    padding: 0;
+}
+.widget1 ul li{
+    text-align: center;
+    padding: 5px 0;
+}
+.widget1 ul li a{
+    color: var(--deepgreen-color);
+}

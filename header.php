@@ -75,7 +75,7 @@
             <div class="container">
                 <div class="row">
                     <div class="column twelve">
-                        <nav class="menu">
+                        <!-- <nav class="menu">
                             <div id="menubtn"><i class="fas fa-bars"></i>Menu</div>
                             <ul>
                                 <li><a href="#">home</a></li>
@@ -84,7 +84,18 @@
                                 <li><a href="#">list of doners</a></li>
                                 <li><a href="#">contact us</a></li>
                             </ul>
-                        </nav>
+                        </nav> -->
+                        <div id="menubtn"><i class="fas fa-bars"></i>Menu</div>
+                        <?php 
+                        wp_nav_menu(array(
+                            'theme_location' => 'header_menu',
+                            'depth' => 2,
+                            'container' => 'nav',
+                            'container_class' => 'menu',
+                            'container_id' => 'menu1',
+                            'menu_class' => 'menu1_ul'
+                        ));
+                        ?>
                     </div>
                 </div>
             </div>

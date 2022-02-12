@@ -25,7 +25,35 @@ add_theme_support('post-thumbnails');
 add_theme_support('custom-logo');
 add_theme_support('widgets');
 add_theme_support('menus');
+
+register_nav_menus(array(
+    'header_menu' => __('Header Menu'),
+    'footer_menu' => __('Footer Menu')
+));
+
 }
 add_action('after_setup_theme', 'healthcare_theme_support');
+
+function healthcare_init_widgets(){
+
+register_sidebar(array(
+    'name' => 'Sidebar1',
+    'id' => 'sidebar1',
+    'before_widget'=> '<div class="widget1">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>'
+));
+register_sidebar(array(
+    'name' => 'Sidebar2',
+    'id' => 'sidebar2',
+    'before_widget'=> '<div class="widget2">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>'
+));
+
+}
+add_action('widgets_init','healthcare_init_widgets');
 
 ?>
